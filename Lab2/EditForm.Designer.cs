@@ -49,8 +49,6 @@
             this.teamsTableAdapter = new Lab2.FootballDataSet1TableAdapters.teamsTableAdapter();
             this.footballDataSet11 = new Lab2.FootballDataSet1();
             this.playersTableAdapter = new Lab2.FootballDataSet1TableAdapters.playersTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Team_comboBox = new System.Windows.Forms.ComboBox();
             this.teamsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Number_numericUpDown)).BeginInit();
@@ -95,7 +93,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 259);
+            this.label6.Location = new System.Drawing.Point(34, 264);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 18);
             this.label6.TabIndex = 6;
@@ -105,7 +103,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(34, 223);
+            this.label7.Location = new System.Drawing.Point(34, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 18);
             this.label7.TabIndex = 5;
@@ -115,7 +113,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(34, 185);
+            this.label8.Location = new System.Drawing.Point(34, 188);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 18);
             this.label8.TabIndex = 4;
@@ -134,10 +132,10 @@
             // player_id_label
             // 
             this.player_id_label.AutoSize = true;
-            this.player_id_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.player_id_label.Location = new System.Drawing.Point(187, 33);
+            this.player_id_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.player_id_label.Location = new System.Drawing.Point(178, 33);
             this.player_id_label.Name = "player_id_label";
-            this.player_id_label.Size = new System.Drawing.Size(15, 18);
+            this.player_id_label.Size = new System.Drawing.Size(15, 20);
             this.player_id_label.TabIndex = 7;
             this.player_id_label.Text = "*";
             // 
@@ -226,34 +224,15 @@
             // 
             this.playersTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(231, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 32);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(315, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(82, 28);
-            this.comboBox1.TabIndex = 20;
-            // 
             // Team_comboBox
             // 
             this.Team_comboBox.DataSource = this.teamsBindingSource;
             this.Team_comboBox.DisplayMember = "name_of_team";
+            this.Team_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Team_comboBox.FormattingEnabled = true;
             this.Team_comboBox.Location = new System.Drawing.Point(171, 260);
             this.Team_comboBox.Name = "Team_comboBox";
-            this.Team_comboBox.Size = new System.Drawing.Size(121, 21);
+            this.Team_comboBox.Size = new System.Drawing.Size(197, 28);
             this.Team_comboBox.TabIndex = 21;
             this.Team_comboBox.ValueMember = "team_id";
             // 
@@ -269,8 +248,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(429, 363);
             this.Controls.Add(this.Team_comboBox);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Cancel_button);
             this.Controls.Add(this.OK_button);
             this.Controls.Add(this.Age_numericUpDown);
@@ -320,8 +297,6 @@
         private FootballDataSet1 footballDataSet1;
         private FootballDataSet1 footballDataSet11;
         private FootballDataSet1TableAdapters.playersTableAdapter playersTableAdapter;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
         public FootballDataSet1TableAdapters.teamsTableAdapter teamsTableAdapter;
         private System.Windows.Forms.BindingSource teamsBindingSource;
         public System.Windows.Forms.ComboBox Team_comboBox;

@@ -50,20 +50,7 @@ namespace Lab2
 
         private void EditForm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.players". При необходимости она может быть перемещена или удалена.
-            this.playersTableAdapter.Fill(this.footballDataSet1.players);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.teams". При необходимости она может быть перемещена или удалена.
-            this.teamsTableAdapter.Fill(this.footballDataSet1.teams);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.teams". При необходимости она может быть перемещена или удалена.
-            this.teamsTableAdapter.Fill(this.footballDataSet1.teams);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.teams". При необходимости она может быть перемещена или удалена.
-            this.teamsTableAdapter.Fill(this.footballDataSet1.teams);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.players". При необходимости она может быть перемещена или удалена.
-            this.playersTableAdapter.Fill(this.footballDataSet1.players);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.players". При необходимости она может быть перемещена или удалена.
-            this.playersTableAdapter.Fill(this.footballDataSet1.players);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "footballDataSet1.teams". При необходимости она может быть перемещена или удалена.
-            this.teamsTableAdapter.Fill(this.footballDataSet1.teams);
+           
         }
 
         private void Cancel_button_Click(object sender, EventArgs e)
@@ -97,11 +84,6 @@ namespace Lab2
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int y = Convert.ToInt32(Team_comboBox.SelectedValue);
-            y = y % 4 + 1;
-            Team_comboBox.SelectedValue = y;
-        }
+        
     }
 }

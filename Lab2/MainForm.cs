@@ -110,7 +110,7 @@ namespace Lab2
             var pl = new FootballDataSet1.playersDataTable(); 
             playersTableAdapter.FillBy(pl, Convert.ToInt32(dataGridView2.SelectedRows[0].Cells[0].Value));
             object[] row = pl.Rows[0].ItemArray;
-            //MessageBox.Show(Convert.ToString(Convert.ToInt32(row[6])));
+            
             var fo = new EditForm(Convert.ToInt32(row[0]),
                 row[1].ToString(),
                 row[2].ToString(),
@@ -118,7 +118,6 @@ namespace Lab2
                 Convert.ToInt32(row[4]),
                 row[5].ToString(),
                 Convert.ToInt32(row[6]));
-            MessageBox.Show(fo.Team_comboBox.Text);
             fo.ShowDialog();
             
             playersTableAdapter.Fill(footballDataSet1.players);
