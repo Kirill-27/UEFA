@@ -41,17 +41,19 @@ namespace Lab2
             // 
             // TestInput
             // 
-            this.TestInput.Location = new System.Drawing.Point(74, 73);
+            this.TestInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TestInput.Location = new System.Drawing.Point(40, 29);
             this.TestInput.Name = "TestInput";
-            this.TestInput.Size = new System.Drawing.Size(470, 96);
+            this.TestInput.Size = new System.Drawing.Size(470, 122);
             this.TestInput.TabIndex = 0;
             this.TestInput.Text = "SELECT";
             // 
             // Clearbutton
             // 
-            this.Clearbutton.Location = new System.Drawing.Point(583, 44);
+            this.Clearbutton.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clearbutton.Location = new System.Drawing.Point(525, 72);
             this.Clearbutton.Name = "Clearbutton";
-            this.Clearbutton.Size = new System.Drawing.Size(75, 23);
+            this.Clearbutton.Size = new System.Drawing.Size(109, 38);
             this.Clearbutton.TabIndex = 1;
             this.Clearbutton.Text = "Clear";
             this.Clearbutton.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@ namespace Lab2
             // 
             // DoSQLbutton
             // 
-            this.DoSQLbutton.Location = new System.Drawing.Point(583, 73);
+            this.DoSQLbutton.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoSQLbutton.Location = new System.Drawing.Point(525, 29);
             this.DoSQLbutton.Name = "DoSQLbutton";
-            this.DoSQLbutton.Size = new System.Drawing.Size(75, 23);
+            this.DoSQLbutton.Size = new System.Drawing.Size(109, 37);
             this.DoSQLbutton.TabIndex = 2;
             this.DoSQLbutton.Text = "Do SQL";
             this.DoSQLbutton.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@ namespace Lab2
             // 
             // Exitbutton
             // 
-            this.Exitbutton.Location = new System.Drawing.Point(583, 102);
+            this.Exitbutton.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exitbutton.Location = new System.Drawing.Point(525, 116);
             this.Exitbutton.Name = "Exitbutton";
-            this.Exitbutton.Size = new System.Drawing.Size(75, 23);
+            this.Exitbutton.Size = new System.Drawing.Size(109, 35);
             this.Exitbutton.TabIndex = 3;
             this.Exitbutton.Text = "Exit";
             this.Exitbutton.UseVisualStyleBackColor = true;
@@ -80,7 +84,7 @@ namespace Lab2
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(74, 219);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 176);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(609, 150);
             this.dataGridView1.TabIndex = 4;
@@ -90,7 +94,7 @@ namespace Lab2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(678, 338);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Exitbutton);
             this.Controls.Add(this.DoSQLbutton);

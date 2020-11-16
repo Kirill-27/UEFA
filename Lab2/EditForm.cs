@@ -30,13 +30,12 @@ namespace Lab2
             InitializeComponent();
             teamsTableAdapter.Fill(footballDataSet1.teams);
             playersTableAdapter.Fill(footballDataSet1.players);
-            //MessageBox.Show(Convert.ToString(team_id));
+           
             Team_comboBox.SelectedValue = team_id;
             
             player_id_label.Text = Convert.ToString(player_id);
             
-            //MessageBox.Show(Convert.ToString(Team_comboBox.Text));
-            //MessageBox.Show(Convert.ToString(Team_comboBox.SelectedValue));
+           
             edit = true;
             id = player_id;
             

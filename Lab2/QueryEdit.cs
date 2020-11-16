@@ -47,5 +47,7 @@ namespace Lab2
         {
             Close();
         }
+
+      
     }
 }

@@ -126,6 +126,18 @@ namespace Lab2
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string st = "";
+            for (int i = 0; i < dataGridView2.SelectedRows.Count; ++i)
+            {
+                st+=Convert.ToString(dataGridView2.SelectedRows[i].Cells[0].Value);
+                st += " ";
+            }
+            var result = MessageBox.Show($"Are you sure about deleting rows with id{st}?", "Confirmation", 
+                MessageBoxButtons.YesNo);
+            if(result == DialogResult.No)
+            {
+                return;
+            }
             for(int i=0; i<dataGridView2.SelectedRows.Count; ++i) 
             {
                 playersTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView2.SelectedRows[i].Cells[0].Value));

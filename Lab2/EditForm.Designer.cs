@@ -167,17 +167,37 @@
             // 
             this.Number_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Number_numericUpDown.Location = new System.Drawing.Point(171, 149);
+            this.Number_numericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Number_numericUpDown.Name = "Number_numericUpDown";
             this.Number_numericUpDown.Size = new System.Drawing.Size(120, 26);
             this.Number_numericUpDown.TabIndex = 14;
+            this.Number_numericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Age_numericUpDown
             // 
             this.Age_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Age_numericUpDown.Location = new System.Drawing.Point(171, 185);
+            this.Age_numericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Age_numericUpDown.Name = "Age_numericUpDown";
             this.Age_numericUpDown.Size = new System.Drawing.Size(120, 26);
             this.Age_numericUpDown.TabIndex = 15;
+            this.Age_numericUpDown.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // bindingSource1
             // 
